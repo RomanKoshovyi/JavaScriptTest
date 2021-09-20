@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang = "UK">
+	<head> 
+		<meta charset="utf-8"/>
+		<title>My Form</title>
+		<link rel="shortcut icon" href = "favicon.ico">
+		<link rel="stylesheet" href="Style.css"/>
+		<script src = "script.js"></script>
+	</head>
+	<body>
+		<div class = "main">
+			<h1>Registration</h1>
+			<div class = "form">
+				<form name = "form" id="forma1" onsubmit="func(event)">
+					<div class = "input text">
+						<input type="text" id="fname" name="fname" minlength="1" maxlength="50" required/><span></span>
+						<label for="fname">First name:</label>
+					</div>
+					<div class = "input text">
+						<input type="text" id="lname" name="lname" minlength="1" maxlength="50" required/><span></span>
+						<label for="lname">Last name:</label>
+					</div>
+					<div class = "input text">
+						<input type="number" id="age" name="age" required/><span></span>
+						<label for="age">Age:</label>
+					</div>
+
+					<div class = "input text">
+						<input type="email" id="email" name="email" required/><span></span>
+						<label for="email">E-mail adress:</label>
+					</div>
+					<div class = "input text">
+						<input type="text" id="login" name="login" minlength="4" maxlength="16" required/><span></span>
+						<label for="login">Login:</label>
+					</div>
+
+					<div class = "input text">
+						<input type="password" id="pass1" name="pass1" minlength="8" maxlength="24" required/><span></span>
+						<label for="pass1">Password:</label>
+					</div>
+
+					<div class = "input text">
+						<input type="password" id="pass2" name="pass2" minlength="8" maxlength="24" required/><span></span>
+						<label for="pass2">Repeat password:</label>
+					</div>
+
+					<div class = "input selecter">
+						<label for="region">Server region:</label>
+						<select name="region" id = "region" size="1">
+							<option selected>Europe</option>
+							<option>Asia</option>
+							<option>North America</option>
+							<option>Sorth America</option>
+							<option>Africa</option>
+							<option>Australia</option>
+						</select>
+					</div>
+
+					<div class = "input radio">
+						<label>Your gender:</label>
+						<input type="radio" id="gender1" name="gender" value = "M"/> Male
+						<input type="radio" id="gender2" name="gender" value = "F"/> Female
+						<input type="radio" id="gender3" name="gender" value = "N" checked/> None
+					</div>
+					<div class="input textAr">
+						<label for="status">Set your start status:</label>
+						<textarea name="status" id = "status" cols="22" rows="2" maxlength="100"></textarea>
+					</div>
+
+					<div class = "input check">
+						<input type="checkbox" id="agree1" name="agree1" required/>
+						<label for="agree1">I agree with <a href="#">the privacy policy and cookies</a></label>
+					</div>
+					<div class = "input check">
+						<input type="checkbox" id="agree2" name="agree2" required/>
+						<label for="agree2">I agree with <a href="#">the license agreement</a></label>
+					</div>
+
+					<button name="submit" type="submit" id="submit">Register</button>
+					<div class="foottext">
+						Already have an account? <a href="#">Login</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class = "valid">
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			    <img style="border:0;width:88px;height:31px"
+			        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+			        alt="Правильный CSS!" />
+			</a>
+		</div>
+	</body>
+</html>
